@@ -1,0 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.divide {
+    max-width: 100vw;
+    display: flex;
+}
+aside {
+    width: 20% !important;
+}
+
+.main-section {
+    width: 80% !important;
+    height: 100vh;
+    background: #f0f2f4;
+}
+
+.header {
+    width: 100%;
+    background: white;
+}
+
+.t-name {
+    width: 60%;
+}
+
+.t-name h2 {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.group-name {
+    padding-right: 2%;
+    color: #17095c;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.message {
+    margin: 20px;
+    padding: 20px;
+    width: 70%;
+    height: 150px;
+}
+
+.msg-box {
+    width: 90%
+}
+
+.msg-image img {
+    width: 40px;
+    height: 40px;
+    margin: 1% 2%;
+    margin-left: .5%;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.username a {
+    text-decoration: none;
+}
+
+.username h5 {
+    color:#17095c;
+    font-weight: 600;
+}
+
+.alert-red {
+    color: red;
+    font-weight: bolder;
+    height: 30px;
+    padding: 0.10rem 1.25rem;
+    background-color: #eba1a9;
+    border-radius: 0.25rem;
+    border-color: #eba1a9;
+}
+
+.alert-red p {
+    margin: 0 ;
+}
+
+.chat p {
+    font-size: 0.875rem;
+    font-weight: 200;
+    color: #666;
+
+}
