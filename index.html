@@ -1,15 +1,17 @@
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link  href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Sidebar</title>
+    <title>Postit</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -21,7 +23,7 @@
         <!-- Sidebar -->
         <nav id="sidebar">
             <div class="sidebar-header">
-              <h4><i class="fas fa-user-circle fa-lg settings-space"></i>Username</h4>
+              <h4><i class="fas fa-user-circle fa-lg settings-space"></i>Stuternly</h4>
             </div>
             <ul class=" sidebar-ul list-unstyled components ">
                <strong><p class="sidebar-p d-flex justify-content-between align-items-center sidebar-group ">Groups<i class="fas fa-plus-circle fa-lg" data-toggle="modal" data-target="#myModal"></i></p></strong> 
@@ -49,7 +51,7 @@
                 <li class="active sidebar-li">
                     <ul class="list-unstyled sidebar-ul group-color">
                         <li class ="sidebar-li">
-                            <a class="sidebar-a" href="#">Bikers</a>
+                            <a class="sidebar-a" href="#">UI/UX Design Gods</a>
                         </li>
                         <li class="sidebar-li">
                             <a href="#" class="sidebar-a ">Group 4</a>
@@ -57,9 +59,6 @@
                         <li class="sidebar-li" >
                             <a class="sidebar-a" href="#">Stutern SWE 0.7</a>
                         </li>
-                        <!-- <li class="sidebar-li" >
-                            <a class="sidebar-a" href="#">Dubai Money</a>
-                        </li> -->
                     </ul>
                  </li>
             </ul>
@@ -74,28 +73,99 @@
 
         </nav>
     
-        <!-- MENU BUTTON, CAN BE PLACED ANYWHERE ON THE NAVBAR -->
-        <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-        
-                    <button type="button" id="sidebarCollapse" class="btn menu-button">
-                        <i class="fas fa-align-left"></i>
-                        <span>Menu</span>
-                    </button>
-        
+        <!-- NAVBAR -->
+     <div class="main-section">
+            <div class="component border-bottom header">
+                <div class="title">
+
+                    <!-- MENU ON THE NAVBAR -->
+                    <div id="content">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container-fluid">
+                    
+                                <button type="button" id="sidebarCollapse" class="btn menu-button">
+                                    <i class="fas fa-align-left"></i>
+                                    <span >Menu</span>
+                                </button>
+                    
+                            </div>
+                        </nav>
+                    </div>
+                   
+
+                    <!-- GROUP NAME -->
+                    <div class="t-name">
+                        <h2 class="group-name"> UI/UX Design Gods</h2>
+                    </div>
+                  
+                    <!-- GROUP INFO -->
+                   <div class="dropdown">
+                    <a class="" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   
+                        <i class="fas fa-ellipsis-v" data-toggle="modal" data-target="#modalPoll-1" style="color: #17095c;"></i></a>
+
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" style="color: #17095c;"><i class="fas fa-user-plus"></i>Add User</a>
+                        <a class="dropdown-item" href="#" style="color: #17095c;"><i class="fas fa-user-friends"></i>Member List</a>
+                      </div>
+                    </div>
+                  <!--  -->
                 </div>
-            </nav>
-        </div>
+            </div>
 
-        
+             <!-- MESSAGE VIEW -->
+          <section class="body-section thebody">
+                <div class="message shadow-lg bg-white rounded d-flex">
+                    <div class="msg-image">
+                      <img src="images/ayo.jpg" alt="User's image">
+                    </div>
+                    <div class="ml-2 msg-box">
+                      <div class="d-flex username">
+                        <a class="" href=""><h5>Stuternly</h5></a>
+                        <div class="alert-red ml-3" role="alert"><p>CRITICAL</p></div>  
 
+                      </div>
+                      <div class="chat">
+                        <p>I just got some important stuff to sort out now please. I'm recording so I'll be able to watch later. 
+                        Please let me know if there's going to be another session so i get to join too. Thanks a lot.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </section>
 
+            <!-- FOOTER -->
+             <div class="fixed-footer">
+                <div class="footer-container">
+                    <div class="footer">
+                        <div class="msg">
+                          <p>Set Message Priority:</p>
+                        </div>
+                        <div class="btn-group btn-group-sm">
+                          <button type="button" class="btn btn-secondary">Normal</button>
+                          <button type="button" class="btn btn-secondary">Urgent</button>
+                          <button type="button" class="btn btn-secondary">Critical</button>
+                        </div>
+                      </div>
+                </div>  
+            
+                    <div class="form">
+                    <div class="input-group container-textarea" id="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Enter your text here">
+                            <div class="comment">
 
-        <!-- ALL THE CODE ON THE APP SHOULD BE PLACED BEFORE THIS DIV -->
-    </div> 
-
-
+                            </div>
+                            <textarea placeholder="Enter your text here..." class="text-area"rows="2" cols="50" name="comment" form="usrform">
+                               </textarea>
+                          </div>
+              <div class="icons d-flex">
+                  <i class="fas fa-paper-plane bye"></i>
+                  <i class="fas fa-paperclip bye"></i>
+                  </div>
+              </div>     
+            </div>
+  </div>
+</div> 
 
 
 
@@ -112,7 +182,9 @@
         $('#sidebar').toggleClass('active');
         });
 
-});
+      });
+
+
     </script>
 </body>
 
