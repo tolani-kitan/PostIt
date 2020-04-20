@@ -1,0 +1,191 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link  href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Postit</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4><i class="fas fa-user-circle fa-lg settings-space"></i>Stuternly</h4>
+            </div>
+            <ul class=" sidebar-ul list-unstyled components ">
+               <strong><p class="sidebar-p d-flex justify-content-between align-items-center sidebar-group ">Groups<i class="fas fa-plus-circle fa-lg" data-toggle="modal" data-target="#myModal"></i></p></strong> 
+                <div class="modal fade modal-box" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">CREATE A GROUP</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Name of group?" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Create Group</button>
+                                </div>
+                              </div>
+                            <div class="modal-footer">
+                                <!-- <button class="btn btn-primary" data-dismiss="modal">Cancel</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li class="active sidebar-li">
+                    <ul class="list-unstyled sidebar-ul group-color">
+                        <li class ="sidebar-li">
+                            <a class="sidebar-a" href="#">UI/UX Design Gods</a>
+                        </li>
+                        <li class="sidebar-li">
+                            <a href="#" class="sidebar-a ">Group 4</a>
+                        </li>
+                        <li class="sidebar-li" >
+                            <a class="sidebar-a" href="#">Stutern SWE 0.7</a>
+                        </li>
+                    </ul>
+                 </li>
+            </ul>
+            <div class="sidebar-down bottom-sidebar">
+                <h5 class="settings"><i class="fas fa-cog settings-space"></i>Settings</h5>
+                <h5 class="settings"><i class="fas fa-power-off settings-space"></i>LOGOUT</h5>
+                <div>
+                    <h5 class="sidebar-postit"><i class="fas fa-paper-plane settings-space "></i>PostIt</h5>
+                </div>
+               
+            </div>
+
+        </nav>
+    
+        <!-- NAVBAR -->
+     <div class="main-section">
+            <div class="component border-bottom header">
+                <div class="title">
+
+                    <!-- MENU ON THE NAVBAR -->
+                    <div id="content">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container-fluid">
+                    
+                                <button type="button" id="sidebarCollapse" class="btn menu-button">
+                                    <i class="fas fa-align-left"></i>
+                                    <span >Menu</span>
+                                </button>
+                    
+                            </div>
+                        </nav>
+                    </div>
+                   
+
+                    <!-- GROUP NAME -->
+                    <div class="t-name">
+                        <h2 class="group-name"> UI/UX Design Gods</h2>
+                    </div>
+                  
+                    <!-- GROUP INFO -->
+                   <div class="dropdown">
+                    <a class="" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   
+                        <i class="fas fa-ellipsis-v" data-toggle="modal" data-target="#modalPoll-1" style="color: #17095c;"></i></a>
+
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" style="color: #17095c;"><i class="fas fa-user-plus"></i>Add User</a>
+                        <a class="dropdown-item" href="#" style="color: #17095c;"><i class="fas fa-user-friends"></i>Member List</a>
+                      </div>
+                    </div>
+                  <!--  -->
+                </div>
+            </div>
+
+             <!-- MESSAGE VIEW -->
+          <section class="body-section thebody">
+                <div class="message shadow-lg bg-white rounded d-flex">
+                    <div class="msg-image">
+                      <img src="images/ayo.jpg" alt="User's image">
+                    </div>
+                    <div class="ml-2 msg-box">
+                      <div class="d-flex username">
+                        <a class="" href=""><h5>Stuternly</h5></a>
+                        <div class="alert-red ml-3" role="alert"><p>CRITICAL</p></div>  
+
+                      </div>
+                      <div class="chat">
+                        <p>I just got some important stuff to sort out now please. I'm recording so I'll be able to watch later. 
+                        Please let me know if there's going to be another session so i get to join too. Thanks a lot.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+             <div class="fixed-footer">
+                <div class="footer-container">
+                    <div class="footer">
+                        <div class="msg">
+                          <p>Set Message Priority:</p>
+                        </div>
+                        <div class="btn-group btn-group-sm">
+                          <button type="button" class="btn btn-secondary">Normal</button>
+                          <button type="button" class="btn btn-secondary">Urgent</button>
+                          <button type="button" class="btn btn-secondary">Critical</button>
+                        </div>
+                      </div>
+                </div>  
+            
+                    <div class="form">
+                    <div class="input-group container-textarea" id="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Enter your text here">
+                            <div class="comment">
+
+                            </div>
+                            <textarea placeholder="Enter your text here..." class="text-area"rows="2" cols="50" name="comment" form="usrform">
+                               </textarea>
+                          </div>
+              <div class="icons d-flex">
+                  <i class="fas fa-paper-plane bye"></i>
+                  <i class="fas fa-paperclip bye"></i>
+                  </div>
+              </div>     
+            </div>
+  </div>
+</div> 
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script> 
+       $(document).ready(function () {
+
+       $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        });
+
+      });
+
+
+    </script>
+</body>
+
+</html>
