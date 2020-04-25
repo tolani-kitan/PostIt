@@ -1,0 +1,25 @@
+
+.headerbackground{
+  background-color:#ffffff !important ;
+  color: #000000;
+}
+.togglebutton{
+  background-color:#17095c;
+
+}
+.middlebar{
+  background-color:#D3D3D3;
+  height: 100vh;
+}
+.middlefooter{
+  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  background-color:#ffffff;
+  color: white;
+  text-align: center;
+}
+
+
