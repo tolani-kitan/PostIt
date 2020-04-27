@@ -1,0 +1,18 @@
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(235, 179, 179);
+  border: 1px solid greenyellow;
+  color: white;
+  text-align: center;
+} */
+/* .priobox{
+  border: 1px solid royalblue; */
+  /* width:60px; */
+/* } */
+.priobox{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
