@@ -1,0 +1,30 @@
+
+/* 
+.text-input{
+    display:flex;
+} */
+
+
+.messages{
+  width: 600px; 
+  border-radius: 20px;
+   margin: 30px auto;
+    padding: 10px;
+outline:none;
+}
+
+.buttonInside{
+    position:relative;
+    margin-bottom:10px;
+  }
+
+  .boxx{
+      border-radius: 20px;
+  }
+
+
+  @media (max-width: 420px) {
+    .boxx {
+        width: 10px;
+    }
+}
