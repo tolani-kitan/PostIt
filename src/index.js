@@ -6,17 +6,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import store from './core/store';
 import { Provider } from 'react-redux';
-import "tachyons";
 
 
 
 
 ReactDOM.render(
- <React.StrictMode>
+ 
    <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
    </Provider>
-  </React.StrictMode>
+  
 , document.querySelector('#root'));

@@ -8,10 +8,8 @@ const Header = () => {
 
   return (
     <div style={{color:'black'}}>
-      <div>
+
       <h5>Header</h5>
-      </div>
-     
     
       {/* <Navbar>
         <Navbar.Brand >GROUP 4 bjkbdjahbi</Navbar.Brand>

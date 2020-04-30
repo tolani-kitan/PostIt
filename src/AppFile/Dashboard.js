@@ -30,10 +30,8 @@ const Dashboard = () => {
     </div>
     </Navbar.Brand> 
    
-  {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" className="togglebutton" /> */}
-  <Navbar.Toggle aria-controls="responsive-navbar-nav sticky-top" className="togglebutton" />
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" className="togglebutton" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    
      <div className="sidebar">
           <Sidebar />
         </div>
