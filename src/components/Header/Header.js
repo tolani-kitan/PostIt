@@ -1,29 +1,40 @@
 import React from 'react';
-// import { Navbar } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
+import Caretdown from '../../../../tolani/PostIt/src/components/Caretdown/Caretdown';
+
+// import {Link} from "react-router-dom";
 // import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
-// import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 const Header = () => {
-
   return (
-    <div style={{color:'black'}}>
-
-      <h5>Header</h5>
-    
-      {/* <Navbar>
-        <Navbar.Brand >GROUP 4 bjkbdjahbi</Navbar.Brand>
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            icon
-         </Navbar.Text>
-        </Navbar.Collapse>
-      </Navbar> */}
+    <div>
+      <div style={{ position: 'absolute', top: '0px', right: '30px' }}>
+        <Dropdown style={{ marginRight: '80px' }}>
+          <div
+            className=''
+            data-inverted=''
+            data-tooltip='Group Options'
+            data-position='left center'
+          >
+            <Dropdown.Toggle
+              variant='success'
+              id='dropdown-basic'
+              style={{
+                backgroundColor: 'white',
+                color: 'black',
+                outline: 'none',
+                border: '0',
+                fontSize: '25px',
+                boxShadow: 'none',
+              }} >
+              </Dropdown.Toggle>
+            <Caretdown/>
+          </div>
+        </Dropdown>
+      </div>
     </div>
-
-
   );
-}
-
+};
 
 export default Header;
