@@ -8,7 +8,7 @@
 
 }
 .middlebar{
-  background-color:#D3D3D3;
+  background-color:#f0f2f4;
   height: 100vh;
 }
 .middlefooter{
@@ -22,4 +22,6 @@
   text-align: center;
 }
 
-
+.header {
+  height: 30px;
+}

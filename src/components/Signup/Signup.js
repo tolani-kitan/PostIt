@@ -47,9 +47,11 @@ const Signup =()=>(
                 </div>
                 <div className="dark-colour-top">
                   <div className="form-group">
-                    <button type="submit" id="create-account-button" className="btn btn-primary btn-block btn-lg dark-colour">
+                  <Link to='/dashboard'>
+                  <button type="submit" id="create-account-button" className="btn btn-primary btn-block btn-lg dark-colour">
                       Create account
                     </button>
+                  </Link>
                   </div>
                 </div>
               </form>

@@ -16,3 +16,32 @@
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
+.messages{
+  width: 600px; 
+  border-radius: 20px;
+   margin: 30px auto;
+    padding: 10px;
+outline:none;
+}
+
+.buttonInside{
+    position:relative;
+    margin-bottom:10px;
+  }
+
+  .btn button {
+    border: none;
+    background: white;
+  }
+
+  .boxx{
+      border-radius: 20px;
+  }
+
+
+  @media (max-width: 420px) {
+    .boxx {
+        width: 10px;
+    }
+}

@@ -1,52 +1,61 @@
-import React from 'react';
-// import { Container, Row, Col } from 'react-bootstrap';
-// import { Form } from 'react-bootstrap';
+import React, { Component } from 'react';
 import "./TextInput.css";
+import { connect } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { addMessage } from '../../core/actions/msgActions';
 
-const TextInput = () => {
+class TextInput extends Component {
+    // state = {
+    //   messages: '',
+    //   required: true
+    // }
+
+    // handleChange = (e) => {
+    //   this.setState({
+    //     [e.target.name]: e.target.value
+    //   })
+    // }
+
+    // onButtonSubmit = (e) => {
+    //   e.preventDefault();
+
+    //   const newMesssage = {
+    //     id: uuidv4(),
+    //     messages: this.state.input
+    //   }
+    //   this.props.addMessage(newMesssage);
+    //   this.setState({
+    //     messages: ''
+    //   })
+    //   console.log(this.state.messages)
+    // }
+
+    render () {
+     const { handleChange, onButtonSubmit } = this.props;
   return (
     <div>
-      
-    
       <div className="mt3">
-        <input className="pa2 input-reset ba bg-transparent w-two-thirds measure boxx" type="text" placeholder="Type your message"/>
-        <button ><i className="fas fa-paper-plane"></i></button>
+        <form onSubmit={this.onButtonSubmit}>
+        <input 
+        onChange={this.handleChange} 
+        className="pa2 input-reset ba bg-transparent w-two-thirds measure boxx" 
+        name='messages'
+        type="text" 
+        placeholder="Type your message"
+        required
+        />
+        <button  onClick={(e) => this.onButtonSubmit(e)} ><i className="fas fa-paper-plane"></i></button>
+        </form>
       </div>
-
- 
-
-
-
-       
-      {/* <form className="text-input">
-      <div className="">
-    <label htmlFor="inputlg">Large input</label>
-    <input className="form-control input-lg messages boxx" id="inputlg" type="text"/>
-    <button ><i className="fas fa-paper-plane"></i></button>
-    <i className="fas fa-paper-plane lg" style={{color:'black'}}></i>
-   </div>
-     
-   <div className="buttonInside">
-    <input placeholder="Type something" type="password"/>
-    <button ><i className="fa fa-eye"></i></button>
-  </div> */} */}
-
-      {/* <input
-        type="text" placeholder="type something" style={{ width: "600px", borderRadius: "20px", margin: "30px auto", padding: '10px',  outline:"none"}}
-      />
-        <i className="fas fa-paper-plane lg" style={{color:'black', marginLeft:"30px"}}></i>
-      </form>
-     
-
-      {/* <Form> 
-        <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Example textarea</Form.Label>
-          <Form.Control as="textarea" rows="3" />
-       </Form.Group>
-      </Form> */}
       
     </div>
   );
 };
+}
 
-export default TextInput;
+const mapStateToProps = (state) => ({
+  messages: state.messages
+})
+
+
+export default connect(mapStateToProps, {addMessage })(TextInput);

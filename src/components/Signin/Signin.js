@@ -20,9 +20,6 @@ const Signin =()=>(
         <button className="btn change-color" type="button">
           <Link to="/signup" className="anch-display" >Register</Link>
         </button>
-        <button className="btn change-color" type="button">
-          <Link to="/dashboard" className="anch-display" >Dashboard</Link>
-        </button>
       </div>
     </div>
   </nav>
@@ -48,8 +45,10 @@ const Signin =()=>(
                     </span></label>
                   <Link to="/" className="text-info text-right forget-password" >Forget Password?</Link>
                   <div className="form-down">
-                  <input type="submit" name="submit" id="sign-in-button" className=" tn btn-info btn-block btn-lg button "
+                    <Link to='/dashboard'>
+                    <input type="submit" name="submit" id="sign-in-button" className=" tn btn-info btn-block btn-lg button "
                        value="Sign in" /> 
+                    </Link>
                   </div>
                 </div>
               </form>

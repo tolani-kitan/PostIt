@@ -9,7 +9,7 @@ import React from 'react';
 import './Dashboard.css';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+// import Footer from '../components/Footer/Footer';
 import MiddleBar from '../components/MiddleBar/MiddleBar';
 import { Navbar  } from 'react-bootstrap';
 
@@ -40,15 +40,11 @@ const Dashboard = () => {
   </Navbar.Collapse>
 </Navbar>
      
-
-      
-
-      
        
         <div className="middlebar"><MiddleBar /></div>
 
 
-        <div className="middlefooter"><Footer /></div>
+        {/* <div className="middlefooter"><Footer /></div> */}
 
      
     </div>

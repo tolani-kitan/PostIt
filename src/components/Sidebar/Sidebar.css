@@ -36,6 +36,29 @@
   padding-top: 22px;
 }
 
+.group-list{
+  padding: auto;
+  font-size: 0.9em;
+  color:white;
+  /* border: 1px solid grey; */
+  list-style: none;
+  margin-right:20px;
+  /* cursor: pointer; */
+}
+
+.group-list:hover{
+  background: white;
+  color:black;
+  border-radius: 0.8em;
+  cursor: pointer;
+}
+
+.input-box{
+  border-radius: 10px;
+}
+
+
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
