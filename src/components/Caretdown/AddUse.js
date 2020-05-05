@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import faker from 'faker';
 import {Search } from 'semantic-ui-react';
+import './addUse.css';
 
 
 const data = _.times(5, () => ({
@@ -16,9 +17,16 @@ class AddUse extends Component {
     value: ''
   }
 
-  handleResultSelect = (e, { result }) => this.setState ({
+  handleResultSelect = (e, { result }) => {
+    this.setState ({
     value: result.title
   })
+
+  // const addNewUser = {
+  //   newUser: this.state.value
+  // }
+
+}
 
   handleSearchChange = (e, { value }) => { 
     this.setState ({
@@ -43,7 +51,8 @@ class AddUse extends Component {
   render() {
    const { isLoading, value, results } = this.state;
     return (
-          <Search 
+      <div>
+        <Search 
             loading={isLoading}
             onResultSelect={this.handleResultSelect}
             onSearchChange={_.debounce(this.handleSearchChange, 500, {
@@ -53,8 +62,19 @@ class AddUse extends Component {
             value={value}
             {...this.props}
           />
-
-
+          <div className="result">
+             <ul className='groupp-list'>
+          {
+            results.map((result) => (
+              <li >
+               <strong>{result.title}</strong> 
+              </li>
+            ))
+          }
+        </ul>
+          </div>
+      </div>
+          
 
       // <div  style={{border:"1px solid none", height:"20rem", marginTop:"10px"}} className='ui fluid category search'> 
       //   <div className='ui icon input' >
@@ -65,5 +85,9 @@ class AddUse extends Component {
     );
   }
 }
+
+// const mapStateToProps = (state) => ({
+//   users: state.user.users,
+// })
 
 export default AddUse;

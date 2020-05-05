@@ -4,12 +4,13 @@ import { connect } from 'react-redux';
 import { addMessage } from '../../core/actions/msgActions';
 import { v4 as uuidv4 } from 'uuid';
 import { Alert } from 'reactstrap';
+import Today  from './Date';
 
 import Footer from '../Footer/Footer';
 
 class MiddleBar extends Component {
   state = {
-    messages: '',
+    messages: ''
   }
 
   handleChange = (e) => {
@@ -23,7 +24,7 @@ class MiddleBar extends Component {
 
     const newMesssage = {
       id: uuidv4(),
-      messages: this.state.messages
+      messages: this.state.messages,
     }
 
     if(this.state.messages === ''){
@@ -44,7 +45,7 @@ class MiddleBar extends Component {
 
   render() {
     const { messages } = this.props;
-   
+     
     return (
       <div className="main">
             
@@ -57,6 +58,7 @@ class MiddleBar extends Component {
                {message.messages} 
 
                </p>
+               <p> <Today /> </p>
                </div>
                 )
                  )
