@@ -45,11 +45,11 @@ class Caretdown extends Component {
         <Dropdown.Menu >
 
           <Dropdown.Item >
-            <Button onClick={() => this.hideComponent("showHideAddUse")} style={{backgroundColor:"white", color:"black", border:"none",fontSize: '15px', margin: '10px 0'}}> <i class="fas fa-plus-square"></i>Add Users </Button>
+            <Button onClick={() => this.hideComponent("showHideAddUse")} style={{backgroundColor:"white", color:"black", border:"none",fontSize: '15px', margin: '10px 0'}}> <i className="plus square icon"></i>Add Users </Button>
           </Dropdown.Item>
 
           <Dropdown.Item >
-          <Button onClick={() => this.hideComponent("showHideMember")}  style={{backgroundColor:"white", color:"black", border:"none",fontSize: '15px', margin: '10px 0'}}>  <i className='users-icon'></i>Member List </Button>
+          <Button onClick={() => this.hideComponent("showHideMember")}  style={{backgroundColor:"white", color:"black", border:"none",fontSize: '15px', margin: '10px 0'}}>  <i className='users icon'></i>Member List </Button>
           </Dropdown.Item>
 
         </Dropdown.Menu>

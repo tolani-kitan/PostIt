@@ -3,15 +3,13 @@ import './MiddleBar.css';
 import { connect } from 'react-redux';
 import { addMessage } from '../../core/actions/msgActions';
 import { v4 as uuidv4 } from 'uuid';
-// import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-// import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import { Alert } from 'reactstrap';
 
 import Footer from '../Footer/Footer';
 
 class MiddleBar extends Component {
   state = {
     messages: '',
-    required: true
   }
 
   handleChange = (e) => {
@@ -28,10 +26,20 @@ class MiddleBar extends Component {
       messages: this.state.messages
     }
 
+    if(this.state.messages === ''){
+      return (
+        <div>
+          <Alert color="warning">
+        This is a warning alert — check it out!
+           </Alert>
+        </div>
+      )
+     } 
+   
     this.props.addMessage(newMesssage);
     this.setState({
       messages: ''
-    })
+    });
   }
 
   render() {
@@ -54,8 +62,6 @@ class MiddleBar extends Component {
                  )
               }
   
-    
-
     <div className="middlefooter"><Footer onButtonSubmit={this.onButtonSubmit} handleChange={this.handleChange} /></div>
     </div>
     );

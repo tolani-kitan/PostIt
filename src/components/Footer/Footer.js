@@ -1,15 +1,9 @@
 import React  from 'react';
 import "./Footer.css";
 import PriorityBox from '../PriorityBox/PriorityBox';
-// import { Navbar, NavbarBrand, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-// import { Container, Row, Col } from 'react-bootstrap';
-// import TextInput from '../TextInput/TextInput';
-
-
 
 const Footer = ({ handleChange, onButtonSubmit}) => {
   
-
   return (
     <div className='footer'>
      
