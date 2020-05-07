@@ -38,7 +38,7 @@ class Caretdown extends Component {
     const { showHideAddUse, showHideMember } = this.state;
     return (
       
-      <div>
+      <div style={{backgroundColor:"white"}}>
          {showHideAddUse && <AddUse />}
         {showHideMember && <Member />}
         

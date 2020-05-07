@@ -3,7 +3,6 @@ import './MiddleBar.css';
 import { connect } from 'react-redux';
 import { addMessage } from '../../core/actions/msgActions';
 import { v4 as uuidv4 } from 'uuid';
-import { Alert } from 'reactstrap';
 import Today  from './Date';
 
 import Footer from '../Footer/Footer';
@@ -28,13 +27,7 @@ class MiddleBar extends Component {
     }
 
     if(this.state.messages === ''){
-      return (
-        <div>
-          <Alert color="warning">
-        This is a warning alert — check it out!
-           </Alert>
-        </div>
-      )
+      return console.log('Type in the Textbox')
      } 
    
     this.props.addMessage(newMesssage);

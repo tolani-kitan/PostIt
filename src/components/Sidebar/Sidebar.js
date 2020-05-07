@@ -67,7 +67,7 @@ class Sidebar extends React.Component {
 
 
       <div className="sidenav">
-        <h4 className="firstdiv nonlink">Stuternly $ image</h4>
+        <h4 className="firstdiv nonlink">Stuternly <i className="far fa-user-circle fa-lg"></i></h4>
         <h4 className="secdiv nonlink d-flex justify-content-between align-items-center ">Groups<i className="fas fa-plus-circle fa-lg" onClick={() => { this.handleModal() }}></i></h4>
 
 

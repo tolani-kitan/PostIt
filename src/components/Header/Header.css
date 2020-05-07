@@ -1,0 +1,17 @@
+
+
+
+.div-container{
+    color:black;
+     display: flex ;
+     justify-content:center;
+     margin-left: 200px
+}
+
+
+
+@media screen and (max-height: 450px) {
+.div-container{
+    margin-left: 50px;
+}
+ }

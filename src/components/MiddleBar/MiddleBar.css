@@ -2,11 +2,12 @@
   margin-left: 200px; /* Same as the width of the sidenav */
    /* Increased text to enable scrolling */
   padding: 0px 20px;
+  /* border: 1px solid red; */
+  margin-right: 200px;
+  height: 150px;
+  width: 62.5%;
 }
 
-.main p {
-  /* color: red; */
-}
 
 .middlefooter{
   padding-top: 10px;
